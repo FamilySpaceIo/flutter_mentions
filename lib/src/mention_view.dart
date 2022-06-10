@@ -21,6 +21,7 @@ class FlutterMentions extends StatefulWidget {
     this.style,
     this.strutStyle,
     this.textAlign = TextAlign.start,
+    this.textAlignVertical,
     this.textDirection,
     this.autofocus = false,
     this.autocorrect = true,
@@ -128,6 +129,9 @@ class FlutterMentions extends StatefulWidget {
 
   /// {@macro flutter.widgets.editableText.textAlign}
   final TextAlign textAlign;
+
+    /// {@macro flutter.material.InputDecorator.textAlignVertical}
+  final TextAlignVertical? textAlignVertical;
 
   /// {@macro flutter.widgets.editableText.textDirection}
   final TextDirection? textDirection;
@@ -458,6 +462,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
                 textCapitalization: widget.textCapitalization,
                 style: widget.style,
                 textAlign: widget.textAlign,
+                textAlignVertical: widget.textAlignVertical,
                 textDirection: widget.textDirection,
                 readOnly: widget.readOnly,
                 showCursor: widget.showCursor,
